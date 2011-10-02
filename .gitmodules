@@ -7,3 +7,6 @@
 [submodule "lib/html5-boilerplate"]
 	path = lib/html5-boilerplate
 	url = https://github.com/paulirish/html5-boilerplate.git
+[submodule "lib/markdown2deckjs"]
+	path = lib/markdown2deckjs
+	url = https://github.com/ulf/markdown2deckjs.git
