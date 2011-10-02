@@ -1,0 +1,7 @@
+#social li {
+  list-style-type: none;
+}
+
+#social img {
+  display: inline;
+}

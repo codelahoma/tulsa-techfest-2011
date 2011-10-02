@@ -1,4 +1,13 @@
+#The HTML5 Future Is Now
+
 #Modernizr, Polyfills, and HTML5 Boilerplate
 
-Rod Knowlton - 10/07/2011~
+##Who Am I?
+
+Rod Knowlton
+
+* ![Twitter icon](images/twitter.png) @codelahoma
+
+
+
 
