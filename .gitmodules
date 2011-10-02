@@ -1,0 +1,9 @@
+[submodule "lib/deck.js"]
+	path = lib/deck.js
+	url = git@github.com:codelahoma/deck.js.git
+[submodule "lib/modernizr"]
+	path = lib/modernizr
+	url = https://github.com/Modernizr/Modernizr.git
+[submodule "lib/html5-boilerplate"]
+	path = lib/html5-boilerplate
+	url = https://github.com/paulirish/html5-boilerplate.git
