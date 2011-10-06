@@ -4,4 +4,27 @@
 
 #social img {
   display: inline;
+  padding: 0;
+  margin: 0 1em 0 0;
+}
+
+#social p {
+  margin-left: 1em;
+}
+
+#social h3 {
+  color: #444;
+}
+
+section, p, img {
+  border: 1px solid #ccc;
+}
+
+footer.footnote {
+  position: relative;
+  top: 95%;
+}
+
+#jobtitle.deck-previous, #jobtitle.deck-before {
+  text-decoration: line-through;
 }
