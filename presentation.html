@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!DOCTYPE htmL>
 <!--[if lt IE 7]> <html class="no-js ie6" lang="en"> <![endif]-->
   <!--[if IE 7]>    <html class="no-js ie7" lang="en"> <![endif]-->
     <!--[if IE 8]>    <html class="no-js ie8" lang="en"> <![endif]-->
@@ -19,34 +19,88 @@
           <link rel="stylesheet" href="lib/deck.js/extensions/navigation/deck.navigation.css">
           <link rel="stylesheet" href="lib/deck.js/extensions/status/deck.status.css">
           <link rel="stylesheet" href="lib/deck.js/extensions/hash/deck.hash.css">
+          <link rel="stylesheet" href="lib/deck.js/extensions/codemirror/deck.codemirror.css">
 
           <!-- Theme CSS files (menu swaps these out) -->
-          <!--<link rel="stylesheet" id="style-theme-link" href="lib/deck.js/themes/style/web-2.0.css">-->
-          <link rel="stylesheet" id="style-theme-link" href="ttf2011.css">
+          <link rel="stylesheet" id="style-theme-link" href="lib/deck.js/themes/style/swiss.css">
+          <!--<link rel="stylesheet" id="style-theme-link" href="ttf2011.css">-->
           <link rel="stylesheet" id="transition-theme-link" href="lib/deck.js/themes/transition/horizontal-slide.css">
 
           <!-- Custom CSS just for this page -->
           <link rel="stylesheet" href="slides.css">
 
           <script src="lib/deck.js/modernizr.custom.js"></script>
+
         </head>
 
         <body class="deck-container">
 
-          <section class="slide">
-            <h1>The HTML5 Future Is Now<hr/> Modernizr, Polyfills, and HTML5 Boilerplate</h1>
+          <section id="title" class="slide">
+            <h1 id="main-title">The HTML5 Future Is Now</h1>
+            <h1 id="tag-line">Modernizr, Polyfills, and HTML5 Boilerplate</h1>
           </section>
           
-          <section class="slide" id="social"><h2>Who Am I?</h2>
-            <h3>Rod Knowlton</h3>
-            <h4 class="slide" id="jobtitle">Senior Web Application Development Specialist, HCSC</h4>
-            <h4 class="slide">Computer Guy, codelahoma.com</h4>
-            <ul>
-              <li class="slide"><img alt="Twitter icon" src="images/twitter.png"/>@codelahoma</li>
-              <li class="slide"><img alt="Tumblr icon" src="images/tumblr.png"/>codelahoma.com</li>
-            </ul>
-            <footer class="footnote"><small>Icons Creative Commons, by whatsisname</small></footer>
-          </section>
+            <section class="slide" id="social"><h2>Who Am I?</h2>
+              <h3>Rod Knowlton</h3>
+              <h4  id="jobtitle">Senior Web Application Development Specialist, HCSC</h4>
+              <h4 class="slide">Professional Expert </h4>
+              <ul>
+                <li class="slide"><img alt="Tumblr icon" src="images/tumblr.png"/><span>codelahoma.com</span></li>
+                <li class="slide"><img alt="Twitter icon" src="images/twitter.png"/><span>@codelahoma</span></li>
+              </ul>
+              <footer class="footnote">Icons &copy; 2011 <a href=">http://www.iconarchive.com/show/social-bookmark-icons-by-deleket.2.html">Jojo Mendoza</a></small></footer>
+            </section>
+
+
+            <section class="slide">
+              <h2>Before The Future, The Past</h2>
+              <ul>
+                <li class='slide'>
+                  There are a lot of old browsers out there.
+                </li>
+                <li class='slide'>
+                  Different browsers have different behaviors.
+                </li>
+                <li class='slide'>
+                  So historically quite a few people did something like this:
+                </li>
+              </ul>
+              
+              <div class='slide'>
+              <textarea  class='code' mode='javascript' style='display: none;'>
+//initialization, browser, os detection
+var d, dom, nu='', brow='', ie, ie4, ie5, ie5x, ie6, ie7;
+var ns4, moz, moz_rv_sub, release_date='', moz_brow, moz_brow_nu=''
+var moz_brow_nu_sub='', rv_full=''; 
+var mac, win, old, lin, ie5mac, ie5xwin, konq, saf, op, op4, op5, op6, op7;
+
+d=document;
+n=navigator;
+nav=n.appVersion;
+nan=n.appName;
+nua=n.userAgent;
+old=(nav.substring(0,1)>4);
+mac=(nav.indexOf('Mac')!=-1);
+win=( ( (nav.indexOf('Win')!=-1) || (nav.indexOf('NT')!=-1) ) && !mac)?true:false;
+//...and it got worse from there
+              </textarea>
+              </div>
+                
+            </section>
+
+            <section class='slide'>
+              <h2>Browsers stink, so why would you want to sniff them?</h2>
+              <h4>Two big problems:</h4>
+              <ul>
+                <li class='slide'>
+                  navigator.usrAgent lies, sometimes even <em>by default</em>.
+                </li>
+                <li class='slide'>
+                  Sniffing sets you up for ever increasing maintenance and scaling headaches.
+                </li>
+                
+            </section>
+
 
           <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
           <a href="#" class="deck-next-link" title="Next">&#8594;</a>
@@ -75,6 +129,10 @@
           <script src="lib/deck.js/extensions/status/deck.status.js"></script>
           <script src="lib/deck.js/extensions/navigation/deck.navigation.js"></script>
           <script src="lib/deck.js/extensions/hash/deck.hash.js"></script>
+          <script src="lib/deck.js/extensions/codemirror/codemirror.js"></script>
+          <script src="lib/deck.js/extensions/codemirror/mode/javascript/javascript.js"></script>
+          <script src="lib/deck.js/extensions/codemirror/deck.codemirror.js"></script>
+          <link rel="stylesheet" href="lib/deck.js/extensions/codemirror/themes/default.css">
 
           <script type="text/javascript">
             $(function() {

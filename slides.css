@@ -1,5 +1,27 @@
+#title h1 {
+  font-size: 3em;
+}
+
+#main-title {
+  top: 25%;
+}
+
+#tag-line {
+  position: absolute;
+  top: 70%;
+}
+
+
 #social li {
   list-style-type: none;
+  padding-top: 1em;
+}
+
+#social li span {
+  position: relative;
+  top: -20px;
+  font-size: 1.1em;
+  font-weight: bold;
 }
 
 #social img {
@@ -16,15 +38,27 @@
   color: #444;
 }
 
+#social h4 {
+  font-weight: bold;
+}
+
+#social .deck-before, #social .deck-previous {
+  color: #444;
+  opacity: 1;
+}
+
 section, p, img {
   border: 1px solid #ccc;
 }
 
 footer.footnote {
-  position: relative;
-  top: 95%;
+  position: absolute;
+  bottom: 0;
+  padding-bottom: 1em;
 }
 
-#jobtitle.deck-previous, #jobtitle.deck-before {
+.deck-previous #jobtitle,.deck-before #jobtitle {
+  color: #444;
   text-decoration: line-through;
+  opacity: 0.4;
 }

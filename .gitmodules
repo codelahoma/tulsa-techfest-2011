@@ -1,6 +1,3 @@
-[submodule "lib/deck.js"]
-	path = lib/deck.js
-	url = git@github.com:codelahoma/deck.js.git
 [submodule "lib/modernizr"]
 	path = lib/modernizr
 	url = https://github.com/Modernizr/Modernizr.git
