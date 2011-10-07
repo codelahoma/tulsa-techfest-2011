@@ -102,7 +102,7 @@
 
   <section class='modernizr-slide slide'>
     <h2><img src="images/modernizr.png" alt="Modernizer Logo"/></h2>
-    <h3>Front-End Development Done Right</h3>
+    <h3>Modernizr: Front-End Development Done Right</h3>
     <h4>Project Lead: Faruk Ateş</h4> 
     <h4>Lead Developer: Paul Irish</h4> 
     <ul>
@@ -311,67 +311,67 @@
   <section class='modernizr-slide slide'> 
     <h2><img src="images/modernizr.png" alt="Modernizer Logo"/></h2>
     <h3>The HTML Element</h3>
-      <div>
-        <textarea  class='code' mode='htmlmixed' style='display: none;'>
-          <!--Example: Chrome 14.0-->
-          <html class="js flexbox canvas canvastext 
-            webgl no-touch geolocation postmessage websqldatabase 
-            indexeddb hashchange history draganddrop websockets 
-            rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow 
-            textshadow opacity cssanimations csscolumns cssgradients cssreflections 
-            csstransforms csstransforms3d csstransitions fontface generatedcontent 
-            video audio localstorage sessionstorage webworkers applicationcache svg 
-            inlinesvg smil svgclippaths ready" lang="en">
-            <!--snip-->
-          </html>
-        </textarea>
-      </div>
-      <h3>Sample CSS</h3>
-      <div>
-        <textarea  class='code' mode='css' style='display: none;'>
-          /* From deck.js */
-          .js .deck-container {
-          visibility: hidden;
-          }
-          .ready .deck-container {
-          visibility: visible;
-          }
-          .touch .deck-container {
-          -webkit-text-size-adjust: none;
-          }
-        </textarea>
-      </div>
+    <div>
+      <textarea  class='code' mode='htmlmixed' style='display: none;'>
+        <!--Example: Chrome 14.0-->
+        <html class="js flexbox canvas canvastext 
+          webgl no-touch geolocation postmessage websqldatabase 
+          indexeddb hashchange history draganddrop websockets 
+          rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow 
+          textshadow opacity cssanimations csscolumns cssgradients cssreflections 
+          csstransforms csstransforms3d csstransitions fontface generatedcontent 
+          video audio localstorage sessionstorage webworkers applicationcache svg 
+          inlinesvg smil svgclippaths ready" lang="en">
+          <!--snip-->
+        </html>
+      </textarea>
+    </div>
+    <h3>Sample CSS</h3>
+    <div>
+      <textarea  class='code' mode='css' style='display: none;'>
+        /* From deck.js */
+        .js .deck-container {
+        visibility: hidden;
+        }
+        .ready .deck-container {
+        visibility: visible;
+        }
+        .touch .deck-container {
+        -webkit-text-size-adjust: none;
+        }
+      </textarea>
+    </div>
 
-      </section>
+  </section>
 
 
   <section class='modernizr-slide slide'> 
     <h2><img src="images/modernizr.png" alt="Modernizer Logo"/></h2>
     <h3>The Modernizr Object</h3>
-      <div>
-        <textarea  class='code' mode='javascript' runnable='true' style='display: none;' globals="Modernizr">
-          var audio = Modernizr.audio;
+    <div>
+      <textarea  class='code' mode='javascript' runnable='true' style='display: none;' globals="Modernizr">
+        var audio = Modernizr.audio;
 
-          for(codec in audio){
-            if( audio.hasOwnProperty(codec) ){
-              console.log(codec + "support: " + audio[codec]);
-              }
-            }
-        </textarea>
-      </div>
-    </section>
+        for(codec in audio){
+        if( audio.hasOwnProperty(codec) ){
+        console.log(codec + "support: " + audio[codec]);
+        }
+        }
+      </textarea>
+    </div>
+  </section>
 
   <section class='modernizr-slide slide'> 
     <h2><img src="images/modernizr.png" alt="Modernizer Logo"/></h2>
     <h3>The Undetectables</h3>
-      <p>
+    <p>
       There are a variety of features and attributes that cannot be detected in a consistent manner across all browsers.
-      </p>
+    </p>
 
-      <p>
+    <p>
       Those that have been identified are
       listed on the Modernizr wiki <a href="https://github.com/Modernizr/Modernizr/wiki/Undetectables">Undetectables</a> page, along with workarounds if available.
-      </p>
+    </p>
   </section>
 
   <section class='modernizr-slide slide'> 
@@ -381,10 +381,66 @@
       <li class='slide'>Modernizer Documentation: <a href="http://www.modernizr.com/docs/">http://www.modernizr.com/docs/</a></li>
       <li class='slide'>Annotated Modernizer source code: <a href="http://modernizr.github.com/Modernizr/annotatedsource.html">http://modernizr.github.com/Modernizr/annotatedsource.html</a></li>
     </ul>
-    </section>
+  </section>
 
+  <section class='slide'>
+    <h2>Polyfills</h2>
+    <h3>What are they?</h3>
+    <p class='slide'>
+      A <em>polyfill</em>, or <em>shim</em>, uses JavaScript to add a missing API to non-compliant browsers.
+    </p>
 
+    <p class='slide'>
+      There are polyfills available for almost all features detected by Modernizr. They are listed on
+      the <a href="https://github.com/Modernizr/Modernizr/wiki/HTML5-Cross-browser-Polyfills">Modernizr Wiki</a>.
+    </p>
 
+    <p class='slide'>
+      Don't get carried away with them.
+    </p>
+  </section>
+
+  <section class='slide'>
+    <h2>Polyfills</h2>
+    <h3>Selected Examples</h3>
+    <ul>
+      <li class='slide'><a href="http://gist.github.com/350433">storage polyfill</a> by Remy Sharp</li>
+      <li class='slide'><a href="http://jdbartlett.com/innershiv/">innerShiv</a> by Joe Bartlett</li>
+      <li class='slide'><a href="https://github.com/dciccale/placeholder-enhanced">Placeholder Enhanced</a> by Denis Ciccale</li>
+    </ul>
+  </section>
+
+  <section class='slide'>
+    <h2>HTML5 Boilerplate</h2>
+    <h3>A rock-solid default for HTML5 awesome.</h3>
+    <ul>
+      <li class='slide'>First released in August 10, 2010</li>
+      <li class='slide'><a href="http://html5boilerplate.com/">Version 2.0</a> released August 2011</li>
+      <li class='slide'>Primary Contributors
+        <ul>
+          <li>Paul Irish</li>
+          <li>Divya Manian</li>
+          <li>Shichuan</li>
+          <li>Mathias Bynens</li>
+          <li>Nicolas Gallagher</li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section class='slide'>
+    <h2>HTML5 Boilerplate</h2>
+    <h3>normalize.css</h3>
+    <p>
+      <a href="http://github.com/necolas/normalize.css/">normalize.css</a> was developed by Nicolas Gallagher along with Jonathan Neal for use instead of the traditional CSS Reset stylesheet.
+    </p>
+    <ul>
+      <li class='slide'>Rather than zeroing everything out, it provides reasonable default styles based on extensive research of browser internal stylesheets.</li>
+      <li class='slide'>Saves the hassle of having to define <em>everything</em> all over again.</li>
+      <li class='slide'>Gets those annoying reset styles out of your development tools.</li>
+      <li class='slide'>Saves bandwidth.</li>
+    </ul>
+  </section>
 
   <a href="#" class="deck-prev-link" title="Previous">&#8592;</a>
   <a href="#" class="deck-next-link" title="Next">&#8594;</a>
@@ -437,7 +493,7 @@
           $(this).toggleClass('highlighted');
           });
         });
-</script>
+      </script>
 
-      </body>
-    </html>
+    </body>
+  </html>
