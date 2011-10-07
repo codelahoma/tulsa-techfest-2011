@@ -1,3 +1,7 @@
+.csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide .deck-before, .csstransitions.csstransforms .deck-container:not(.deck-menu) > .slide .deck-previous {
+  opacity: 1;
+}
+
 #title h1 {
   font-size: 3em;
 }
@@ -62,3 +66,11 @@ footer.footnote {
   text-decoration: line-through;
   opacity: 0.4;
 }
+
+#feature-detect {
+  font-size: 2em;
+  font-variant: small-caps;
+  padding-top: 1em;
+  text-align: center;
+}
+
